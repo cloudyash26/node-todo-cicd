@@ -1,6 +1,6 @@
 # node-todo-cicd
 
-Run these commands:
+Run these commandsin this directory /var/lib/jenkins/workspace/TODO-NODEJS-APP
 
 
 `sudo apt install nodejs`
@@ -16,4 +16,18 @@ Run these commands:
 or Run by docker compose
 
 test
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+`RUN npm install`
+This command in the dockerfile installs the dependencies specified in the package.json file.
+
+`RUN npm run test`
+This command in the dockerfile runs the test script defined in the package.json file.
+-----------------------------------------------------------------------------------------------------------------------------
+Troubleshooting:
+Use this commands for permission denied related issues
+`sudo usermod -aG docker ubuntu`
+`sudo usermod -aG docker jenkins`
+
 
